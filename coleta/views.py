@@ -5,7 +5,7 @@ from coleta.serializers import PointSerializer, ItemSerializer
 
 class PointViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows users to be viewed or edited.
+    API endpoint for /points
     """
     queryset = Point.objects.all().order_by('-created_at')
     serializer_class = PointSerializer
@@ -13,7 +13,7 @@ class PointViewSet(viewsets.ModelViewSet):
 
 class ItemViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows groups to be viewed or edited.
+    API endpoint for /items
     """
     queryset = Item.objects.all()
     serializer_class = ItemSerializer

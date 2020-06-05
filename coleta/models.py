@@ -11,7 +11,7 @@ class Item(models.Model):
 
 class Point(models.Model):
     name = models.CharField(max_length=100)
-    image = models.ImageField(upload_to='point')
+    image = models.ImageField(upload_to='point', null=True)
     email = models.EmailField()
     whatsapp = models.CharField(max_length=20)
     latitude = models.DecimalField(max_digits=9, decimal_places=6)
