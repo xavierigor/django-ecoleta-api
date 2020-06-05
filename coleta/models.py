@@ -19,6 +19,7 @@ class Point(models.Model):
     city = models.CharField(max_length=50)
     uf = models.CharField(max_length=2)
     items = models.ManyToManyField(Item, related_name='points')
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.name
