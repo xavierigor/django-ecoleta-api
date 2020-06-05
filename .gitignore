@@ -11,7 +11,17 @@
 __pycache__/
 local_settings.py
 db.sqlite3
-media
+
+media/*
+!media/item/
+
+media/item/*
+!/media/item/baterias.svg
+!/media/item/eletronicos.svg
+!/media/item/lampadas.svg
+!/media/item/oleo.svg
+!/media/item/organicos.svg
+!/media/item/papeis-papelao.svg
 
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
 # in your Git repository. Update and uncomment the following line accordingly.
@@ -266,8 +276,6 @@ fabric.properties
 # Rope project settings
 
 # mkdocs documentation
-
-# mypy
 
 # Pyre type checker
 

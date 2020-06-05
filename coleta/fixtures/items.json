@@ -1,0 +1,50 @@
+[
+  {
+    "model": "coleta.item",
+    "pk": 1,
+    "fields": {
+      "title": "Lâmpadas",
+      "image": "item/lampadas.svg"
+    }
+  },
+  {
+    "model": "coleta.item",
+    "pk": 2,
+    "fields": {
+      "title": "Pilhas e baterias",
+      "image": "item/baterias.svg"
+    }
+  },
+  {
+    "model": "coleta.item",
+    "pk": 3,
+    "fields": {
+      "title": "Papéis e Papelão",
+      "image": "item/papeis-papelao.svg"
+    }
+  },
+  {
+    "model": "coleta.item",
+    "pk": 4,
+    "fields": {
+      "title": "Resíduos Eletrônicos",
+      "image": "item/eletronicos.svg"
+    }
+  },
+  {
+    "model": "coleta.item",
+    "pk": 5,
+    "fields": {
+      "title": "Resíduos Orgânicos",
+      "image": "item/organicos.svg"
+    }
+  },
+  {
+    "model": "coleta.item",
+    "pk": 6,
+    "fields": {
+      "title": "Óleo de Cozinha",
+      "image": "item/oleo.svg"
+    }
+  }
+]
