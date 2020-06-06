@@ -10,6 +10,7 @@ django = "*"
 djangorestframework = "*"
 psycopg2 = "*"
 pillow = "*"
+django-filter = "*"
 
 [requires]
 python_version = "3.6"
