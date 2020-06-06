@@ -13,11 +13,11 @@ class ItemSerializer(serializers.ModelSerializer):
 class ItemPointSerializer(serializers.ModelSerializer):
     class Meta:
         model = Item
-        fields = ['title', ]
+        fields = ['id', 'title']
 
 
 class PointSerializer(serializers.ModelSerializer):
-    items = ItemPointSerializer(many=True)
+    items = ItemPointSerializer(read_only=True, many=True)
 
     class Meta:
         model = Point

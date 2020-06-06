@@ -5,17 +5,18 @@ REQUIREMENTS_FILE=requirements.txt
 
 
 help:
-	@echo 'Makefile for Django Ecoleta Api                                          '
-	@echo '                                                                         '
-	@echo 'Usage:                                                                   '
-	@echo '   make setup    install dependencies and execute migrations             '
-	@echo '   make run      run Django built-in server                              '
-	@echo '   make test     run all or specific app tests                           '
+	@echo 'Makefile for Django Ecoleta Api                                            '
+	@echo '                                                                           '
+	@echo 'Usage:                                                                     '
+	@echo '   make setup    install dependencies and execute migrations and fixtures  '
+	@echo '   make run      run Django built-in server                                '
+	@echo '   make test     run all or specific app tests                             '
 
 
 setup:
 	@$(PIP_BIN) install -r $(REQUIREMENTS_FILE)
 	@$(PYTHON_BIN) $(MANAGE_FILE) migrate
+	@$(PYTHON_BIN) $(MANAGE_FILE) loaddata items
 
 run:
 	@$(PYTHON_BIN) $(MANAGE_FILE) runserver

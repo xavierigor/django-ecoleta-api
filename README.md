@@ -18,7 +18,7 @@ Você pode instalar `django-ecoleta-api` clonando do GitHub:
 
         $ git clone https://github.com/xavierigor/django-ecoleta-api.git
 
-Ative seu virtual environment e use `make setup` para instalar todas as dependências do projeto e rodar as migrações:
+Ative seu virtual environment e use `make setup` para instalar todas as dependências do projeto e rodar migrações e fixtures:
 
         $ cd django-ecoleta-api/
         $ make setup
