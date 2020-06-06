@@ -10,7 +10,6 @@ help:
 	@echo 'Usage:                                                                     '
 	@echo '   make setup    install dependencies and execute migrations and fixtures  '
 	@echo '   make run      run Django built-in server                                '
-	@echo '   make test     run all or specific app tests                             '
 
 
 setup:
