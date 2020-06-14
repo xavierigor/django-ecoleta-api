@@ -17,7 +17,7 @@ A api possui os seguintes endpoints:
  - `/api/items/`
 
 Lembrando que:
-1. Cada endpoint pode receber requisições do tipo `GET, POST, PUT, PATCH e DELETE`
+1. A api é __RESTful__, e pode receber requisições do tipo `GET, POST, PUT, PATCH e DELETE`
 2. Para acessar um registro único, basta informar seu identificador, ex: `/api/points/1/`
 
 #### Filtragem de conteúdo
