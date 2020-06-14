@@ -1,3 +1,4 @@
+import os
 import environ
 
 env = environ.Env()
@@ -42,7 +43,7 @@ EMAIL_BACKEND = env(
 # -----------------------------------------------------------------------------
 # Security and Users
 # -----------------------------------------------------------------------------
-SECRET_KEY = env("SECRET_KEY")
+SECRET_KEY = env("SECRET_KEY", default=os.environ["SECRET_KEY"])
 ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=[])
 AUTH_PASSWORD_VALIDATORS = [
     {
