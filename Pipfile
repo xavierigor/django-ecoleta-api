@@ -11,6 +11,8 @@ djangorestframework = "*"
 psycopg2 = "*"
 pillow = "*"
 django-filter = "*"
+pytest-django = "*"
+django-environ = "*"
 
 [requires]
 python_version = "3.6"
