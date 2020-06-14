@@ -1,5 +1,7 @@
 🐍 django-ecoleta-api
 ==============
+[![Build Status](https://travis-ci.com/xavierigor/django-ecoleta-api.svg?branch=master)](https://travis-ci.com/xavierigor/django-ecoleta-api)
+![GitHub](https://img.shields.io/github/license/xavierigor/django-ecoleta-api)
 
 `django-ecoleta-api` é um projeto que implementa a api feita na [Next Level Week][1] da [Rocketseat][2], porém utilizando __Django__ e __django-rest-framework__.
 
