@@ -3,9 +3,6 @@ language: python
 python:
   - "3.6"
 
-env:
-  - SECRET_KEY="TEST"
-  - DATABASE_URL="postgres://postgres@localhost:5432/travis_ci_test"
 services:
   - postgresql
 install:
