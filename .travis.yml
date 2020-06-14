@@ -10,5 +10,8 @@ services:
 install:
   - pipenv install
 
+before_script:
+  - psql -c 'create database travis_ci_test;' -U postgres
+
 script:
   - python manage.py test
