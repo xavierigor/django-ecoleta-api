@@ -1,4 +1,3 @@
-import os
 import environ
 
 env = environ.Env()
@@ -9,7 +8,7 @@ env.read_env(env_file=root_path(".env"))
 # -----------------------------------------------------------------------------
 # Basic Config
 # -----------------------------------------------------------------------------
-ENV = env("ENV", default="prod")
+ENV = env("DJANGO_ENV", default="prod")
 assert ENV in ["dev", "test", "prod", "qa"]
 
 DEBUG = env.bool("DEBUG", default=False)
@@ -43,7 +42,7 @@ EMAIL_BACKEND = env(
 # -----------------------------------------------------------------------------
 # Security and Users
 # -----------------------------------------------------------------------------
-SECRET_KEY = env("SECRET_KEY", default=os.environ["SECRET_KEY"])
+SECRET_KEY = env("SECRET_KEY")
 ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=[])
 AUTH_PASSWORD_VALIDATORS = [
     {
