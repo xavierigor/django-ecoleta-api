@@ -8,7 +8,7 @@ env.read_env(env_file=root_path(".env"))
 # -----------------------------------------------------------------------------
 # Basic Config
 # -----------------------------------------------------------------------------
-ENV = env("ENV", default="prod")
+ENV = env("DJANGO_ENV", default="prod")
 assert ENV in ["dev", "test", "prod", "qa"]
 
 DEBUG = env.bool("DEBUG", default=False)
